@@ -44,11 +44,49 @@
     height: calc((100% - 10px) / 2);
 }
 
+.planning{
+    background-color: #9792e4;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+}
+.cardNone{
+    background-color: transparent;
+}
+.CardWhite{
+    background-color: white;
+}
+.testimonials .container .cards{
+    background-color:#9792e4 ;
+}
+
+.benefit{
+    background-color: #9792e4;
+}
+
+.getStarted{
+    background-color: #9792e4;
+}
+.foot{
+    background-color: #333333;
+}
+
+
 /* REGOLE MEDIA QUERY*/
 
-@media screen and (min-width:0px) {
+@media screen and  (max-width:468px) {
     .container{
-        width:98% ;
+        width:95% ;
+    }
+    .testimonials .container{
+        flex-direction: column;
+        align-items: center;
+        padding-top: 30px;
+    }
+    .aboutUs .container{
+        flex-direction: column;
+        align-items: center;
+        padding-top: 30px;
     }
 }
 @media screen and (min-width:678px) {
@@ -58,16 +96,66 @@
         flex-wrap: wrap;
         justify-content: space-between;
     }
+    .testimonials .container{
+        flex-direction: column;
+        align-items: center;
+        padding-top: 30px;
+
+    }
     .cards{
         width: 33%;
-        
+    }
+    .testimonials .container .cards{
+        width: 90%;
     }
     #bigCards{
         width:66%
     }
+    .planning .container{
+        justify-content: center;
+
+    }
+    #cardNone{
+            margin-right: 5px;
+    }
+    .benefit .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .benefit .container .cards{
+        width: 49%;
+    }
+    .aboutUs .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .aboutUs .container .cards{
+        width: calc(99% / 2);
+    }
+    .getStarted .container{
+        width: 50%;
+    }
+    .foot .container{
+        width: 50%;
+    }
 }
-@media screen and (min-width:1200px) {
+
+@media screen and (min-width:1000px) {
     .container{
         width:60% ;
     }
-}
+    .testimonials .container{
+        flex-direction: column;
+        align-items: center;
+        padding-top: 30px;
+    }
+    .benefit .container .cards{
+        width: calc(99% / 3);
+    }
+    .getStarted .container{
+        width: 30%;
+    }
+    .foot .container{
+        width: 30%;
+    }
+}   
